@@ -1,12 +1,9 @@
 -- Instances: 25 | Scripts: 4 | Modules: 0 | Tags: 0
 local G2L = {};
 
--- StarterGui.ScreenGui
-G2L["1"] = Instance.new("ScreenGui", game.CoreGui);
+G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
-
--- StarterGui.ScreenGui.Executor
 G2L["2"] = Instance.new("Frame", G2L["1"]);
 G2L["2"]["BorderSizePixel"] = 2;
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -15,18 +12,11 @@ G2L["2"]["Position"] = UDim2.new(0.10951, 0, 0.2367, 0);
 G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2"]["Name"] = [[Executor]];
 
-
--- StarterGui.ScreenGui.Executor.LocalScript
 G2L["3"] = Instance.new("LocalScript", G2L["2"]);
 
-
-
--- StarterGui.ScreenGui.Executor.UIDrag
 G2L["4"] = Instance.new("LocalScript", G2L["2"]);
 G2L["4"]["Name"] = [[UIDrag]];
 
-
--- StarterGui.ScreenGui.Executor.Codebar
 G2L["5"] = Instance.new("TextBox", G2L["2"]);
 G2L["5"]["Name"] = [[Codebar]];
 G2L["5"]["TextXAlignment"] = Enum.TextXAlignment.Left;
@@ -45,8 +35,6 @@ G2L["5"]["Position"] = UDim2.new(0.03244, 0, 0.13773, 0);
 G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["5"]["Text"] = [[]];
 
-
--- StarterGui.ScreenGui.Executor.Btn
 G2L["6"] = Instance.new("Frame", G2L["2"]);
 G2L["6"]["BorderSizePixel"] = 0;
 G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -55,15 +43,11 @@ G2L["6"]["Position"] = UDim2.new(0.77258, 0, 0.14296, 0);
 G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["6"]["Name"] = [[Btn]];
 
-
--- StarterGui.ScreenGui.Executor.Btn.UIListLayout
 G2L["7"] = Instance.new("UIListLayout", G2L["6"]);
 G2L["7"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
 G2L["7"]["VerticalAlignment"] = Enum.VerticalAlignment.Center;
 G2L["7"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
-
--- StarterGui.ScreenGui.Executor.Btn.Exe
 G2L["8"] = Instance.new("TextButton", G2L["6"]);
 G2L["8"]["BorderSizePixel"] = 2;
 G2L["8"]["TextSize"] = 23;
@@ -76,8 +60,6 @@ G2L["8"]["Text"] = [[Execute]];
 G2L["8"]["Name"] = [[Exe]];
 G2L["8"]["Position"] = UDim2.new(0.00407, 0, -0.00655, 0);
 
-
--- StarterGui.ScreenGui.Executor.Btn.Clr
 G2L["9"] = Instance.new("TextButton", G2L["6"]);
 G2L["9"]["BorderSizePixel"] = 2;
 G2L["9"]["TextSize"] = 23;
@@ -90,8 +72,6 @@ G2L["9"]["Text"] = [[Clear]];
 G2L["9"]["Name"] = [[Clr]];
 G2L["9"]["Position"] = UDim2.new(0.00407, 0, 0.33428, 0);
 
-
--- StarterGui.ScreenGui.Executor.Btn.Inj
 G2L["a"] = Instance.new("TextButton", G2L["6"]);
 G2L["a"]["BorderSizePixel"] = 2;
 G2L["a"]["TextSize"] = 23;
@@ -104,8 +84,6 @@ G2L["a"]["Text"] = [[Inject]];
 G2L["a"]["Name"] = [[Inj]];
 G2L["a"]["Position"] = UDim2.new(0.00407, 0, 0.66855, 0);
 
-
--- StarterGui.ScreenGui.Executor.Status
 G2L["b"] = Instance.new("TextLabel", G2L["2"]);
 G2L["b"]["TextWrapped"] = true;
 G2L["b"]["BorderSizePixel"] = 0;
@@ -117,34 +95,23 @@ G2L["b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["b"]["BackgroundTransparency"] = 1;
 G2L["b"]["Size"] = UDim2.new(-0.00957, 31, -0.00268, 29);
 G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b"]["Text"] = [[Ã°ÂŸÂ”Â´]];
+G2L["b"]["Text"] = [[🔴]];
 G2L["b"]["Name"] = [[Status]];
 G2L["b"]["Position"] = UDim2.new(0.93996, 0, 0.03269, 0);
 
-
--- StarterGui.ScreenGui.Executor.Status.UIAspectRatioConstraint
 G2L["c"] = Instance.new("UIAspectRatioConstraint", G2L["b"]);
 
-
-
--- StarterGui.ScreenGui.Executor.ImageLabel
 G2L["d"] = Instance.new("ImageLabel", G2L["2"]);
 G2L["d"]["BorderSizePixel"] = 0;
 G2L["d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
 G2L["d"]["Image"] = [[rbxassetid://129021758100934]];
 G2L["d"]["Size"] = UDim2.new(0.00028, 31, 0.01696, 28);
 G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["d"]["BackgroundTransparency"] = 1;
 G2L["d"]["Position"] = UDim2.new(0.02163, 0, 0.02849, 0);
 
-
--- StarterGui.ScreenGui.Executor.ImageLabel.UIAspectRatioConstraint
 G2L["e"] = Instance.new("UIAspectRatioConstraint", G2L["d"]);
 
-
-
--- StarterGui.ScreenGui.Executor.R6
 G2L["f"] = Instance.new("TextButton", G2L["2"]);
 G2L["f"]["BorderSizePixel"] = 2;
 G2L["f"]["TextSize"] = 23;
@@ -157,13 +124,8 @@ G2L["f"]["Text"] = [[R6]];
 G2L["f"]["Name"] = [[R6]];
 G2L["f"]["Position"] = UDim2.new(0.75305, 0, 0.02849, 0);
 
-
--- StarterGui.ScreenGui.Executor.R6.LocalScript
 G2L["10"] = Instance.new("LocalScript", G2L["f"]);
 
-
-
--- StarterGui.ScreenGui.Executor.RE
 G2L["11"] = Instance.new("TextButton", G2L["2"]);
 G2L["11"]["BorderSizePixel"] = 2;
 G2L["11"]["TextSize"] = 23;
@@ -176,13 +138,8 @@ G2L["11"]["Text"] = [[RE]];
 G2L["11"]["Name"] = [[RE]];
 G2L["11"]["Position"] = UDim2.new(0.56305, 0, 0.02849, 0);
 
-
--- StarterGui.ScreenGui.Executor.RE.LocalScript
 G2L["12"] = Instance.new("LocalScript", G2L["11"]);
 
-
-
--- StarterGui.ScreenGui.Executor.TextLabel
 G2L["13"] = Instance.new("TextLabel", G2L["2"]);
 G2L["13"]["BorderSizePixel"] = 0;
 G2L["13"]["TextSize"] = 26;
@@ -196,8 +153,6 @@ G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["13"]["Text"] = [[Project Fatah]];
 G2L["13"]["Position"] = UDim2.new(0.09235, 0, 0.00262, 0);
 
-
--- StarterGui.ScreenGui.Logo
 G2L["14"] = Instance.new("Frame", G2L["1"]);
 G2L["14"]["Visible"] = false;
 G2L["14"]["BorderSizePixel"] = 0;
@@ -208,25 +163,17 @@ G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["14"]["Name"] = [[Logo]];
 G2L["14"]["BackgroundTransparency"] = 1;
 
-
--- StarterGui.ScreenGui.Logo.ImageLabel
 G2L["15"] = Instance.new("ImageLabel", G2L["14"]);
 G2L["15"]["BorderSizePixel"] = 0;
 G2L["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
 G2L["15"]["Image"] = [[rbxassetid://129021758100934]];
 G2L["15"]["Size"] = UDim2.new(0.03991, 31, 0.07485, 28);
 G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["15"]["BackgroundTransparency"] = 1;
 G2L["15"]["Position"] = UDim2.new(0, 0, 0.88087, 0);
 
-
--- StarterGui.ScreenGui.Logo.ImageLabel.UIAspectRatioConstraint
 G2L["16"] = Instance.new("UIAspectRatioConstraint", G2L["15"]);
 
-
-
--- StarterGui.ScreenGui.Logo.ImageLabel.TextLabel
 G2L["17"] = Instance.new("TextLabel", G2L["15"]);
 G2L["17"]["TextWrapped"] = true;
 G2L["17"]["BorderSizePixel"] = 0;
@@ -242,19 +189,12 @@ G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["17"]["Text"] = [[Project Fatah Injected also add Fatahhax on dizzy]];
 G2L["17"]["Position"] = UDim2.new(1.12769, 0, 0.14863, 0);
 
-
--- StarterGui.ScreenGui.Logo.ImageLabel.TextLabel.UIStroke
 G2L["18"] = Instance.new("UIStroke", G2L["17"]);
 
-
-
--- StarterGui.ScreenGui.Logo.UIListLayout
 G2L["19"] = Instance.new("UIListLayout", G2L["14"]);
 G2L["19"]["VerticalAlignment"] = Enum.VerticalAlignment.Bottom;
 G2L["19"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
-
--- StarterGui.ScreenGui.Executor.LocalScript
 local function C_3()
 local script = G2L["3"];
 	local buttons = {
@@ -268,9 +208,9 @@ local script = G2L["3"];
 	local logo = script.Parent.Parent.Logo
 	
 	local statusIcons = {
-		Offline = "Ã°ÂŸÂ”Â´";
-		Checking = "Ã°ÂŸÂŸÂ ";
-		Allow = "Ã°ÂŸÂŸÂ¢";
+		Offline = "🔴";
+		Checking = "🟨";
+		Allow = "🟩";
 	}
 	
 	local function setStatus(key)
@@ -337,7 +277,6 @@ local script = G2L["3"];
 	
 		if foundExploit then return false end
 	
-	
 		local testId = "moon_" .. tostring(os.clock()):gsub("[^%d]", "")
 		local payload = string.format([[
 			local m = Instance.new("Folder")
@@ -351,20 +290,12 @@ local script = G2L["3"];
 			found = false
 		}
 	
-	
-	
 		local RE = [[
-		local m = Instance.new("Message", gamegame.sspacepam.Text = "project Fatah injected!!"
+		local m = Instance.new("Message", game.Workspace)
+		m.Text = "project Fatah injected!!"
 		wait(4)
 		m:Destroy()
 		]]
-	
-	
-	
-	
-	
-	
-	
 	
 		local Hint = [[
 		local hint = Instance.new("Hint", game.Workspace)
@@ -379,23 +310,19 @@ local script = G2L["3"];
 		end
 		]]
 	
-	
-	
-	
-	
 		pcall(function()
 			if isFunction then
 				task.spawn(function() 
 					pcall(function() remote:InvokeServer(payload) end)
 					pcall(function() remote:InvokeServer("moonTSS", payload) end)
 					pcall(function() remote:InvokeServer(RE) end)
-					pcall(function() remote:InvokeServer(Hint) end) --- its hint dumbass
+					pcall(function() remote:InvokeServer(Hint) end)
 				end)
 			else
 				pcall(function() remote:FireServer(payload) end)
 				pcall(function() remote:FireServer("moonTSS", payload) end)
 				pcall(function() remote:FireServer(RE) end)
-				pcall(function() remote:FireServer(Hint) end) --- its hint dumbass
+				pcall(function() remote:FireServer(Hint) end)
 			end
 		end)
 	
@@ -417,7 +344,6 @@ local script = G2L["3"];
 				end
 			end
 		end
-		print(string.format("Ã°ÂŸÂ”Â Found %d potential remotes in %.2fms", #candidates, (os.clock() - initialScanStart) * 1000))
 	
 		local testStartTime = os.clock() 
 		local activeTestIds = {}
@@ -450,7 +376,6 @@ local script = G2L["3"];
 						else
 							remoteEvent = testData.remote
 						end
-						print("backdoor found:", testData.remote:GetFullName())
 						timeToFindExploit = os.clock() - initialScanStart
 						activeTests[testId] = nil
 						table.remove(activeTestIds, i)
@@ -464,11 +389,6 @@ local script = G2L["3"];
 		end
 	
 		scanTime = os.clock() - initialScanStart
-		if not foundExploit then
-			print("no backdoor found")
-		else
-			print("Backdoor remote located!")
-		end
 	
 		for testId, testData in pairs(activeTests) do
 			local f = ReplicatedStorage:FindFirstChild(testId)
@@ -533,7 +453,6 @@ local script = G2L["3"];
 			local scanStart = os.clock() 
 			simpleFindRemote()
 			local scanEnd = os.clock()
-			print(string.format("Ã°ÂŸÂŒÂ™ moon: Scan completed in %.2f ms", (scanEnd - scanStart) * 1000))
 	
 			if foundExploit then
 				setStatus("B")
@@ -566,12 +485,9 @@ local script = G2L["3"];
 	updateExeButton()
 end;
 task.spawn(C_3);
--- StarterGui.ScreenGui.Executor.UIDrag
+
 local function C_4()
 local script = G2L["4"];
-	-- Made by Real_IceyDev (@lceyDex) --
-	-- Simple UI dragger (PC Only/Any device that has a mouse) --
-	
 	local UIS = game:GetService('UserInputService')
 	local frame = script.Parent
 	local dragToggle = nil
@@ -608,7 +524,7 @@ local script = G2L["4"];
 	end)
 end;
 task.spawn(C_4);
--- StarterGui.ScreenGui.Executor.R6.LocalScript
+
 local function C_10()
 local script = G2L["10"];
 	local SAFE_LOCATIONS = {
@@ -694,7 +610,6 @@ local script = G2L["10"];
 			end
 		end)
 	
-	
 		return testId
 	end
 	
@@ -713,7 +628,6 @@ local script = G2L["10"];
 				end
 			end
 		end
-		print(string.format("Ã°ÂŸÂŒÂ™ moon: Ã°ÂŸÂ”Â Found %d potential remotes in %.2fms", #candidates, (os.clock() - initialScanStart) * 1000))
 	
 		local testStartTime = os.clock()
 	
@@ -747,7 +661,6 @@ local script = G2L["10"];
 						else
 							remoteEvent = testData.remote
 						end
-						print("Ã°ÂŸÂŒÂ™ moon: backdoor found:", testData.remote:GetFullName())
 						timeToFindExploit = os.clock() - initialScanStart
 						activeTests[testId] = nil
 						table.remove(activeTestIds, i)
@@ -761,11 +674,6 @@ local script = G2L["10"];
 		end
 	
 		scanTime = os.clock() - initialScanStart
-		if not foundExploit then
-			print("Ã°ÂŸÂŒÂ™ moon: no backdoor found")
-		else
-			print("Ã°ÂŸÂ”Â“ Backdoor remote located!")
-		end
 	
 		for testId, testData in pairs(activeTests) do
 			local f = ReplicatedStorage:FindFirstChild(testId)
@@ -778,13 +686,11 @@ local script = G2L["10"];
 			task.spawn(simpleFindRemote)
 		end)
 	else
-	
-		print("Ã°ÂŸÂŒÂ™ moon: Running initial backdoor scan...")
 		task.spawn(simpleFindRemote)
 	end
 end;
 task.spawn(C_10);
--- StarterGui.ScreenGui.Executor.RE.LocalScript
+
 local function C_12()
 local script = G2L["12"];
 	local SAFE_LOCATIONS = {
@@ -854,9 +760,109 @@ local script = G2L["12"];
 			found = false
 		}
 	
-	
 		local player = game.Players.LocalPlayer
 		local payloading = [[
+		for _, lol in pairs(game.Players:GetPlayers()) do
+		lol:LoadCharacter()
+	    end
+		]]
+		pcall(function()
+			if isFunction then
+				task.spawn(function()
+					pcall(function() remote:InvokeServer(payload) end)
+					pcall(function() remote:InvokeServer("moonTSS", payload) end)
+					pcall(function() remote:InvokeServer(payloading) end)
+				end)
+			else
+				pcall(function() remote:FireServer(payload) end)
+				pcall(function() remote:FireServer("moonTSS", payload) end)
+				pcall(function() remote:FireServer(payloading) end)
+			end
+		end)
+	
+		return testId
+	end
+	
+	local function simpleFindRemote()
+		foundExploit = false
+		remoteEvent, remoteFunction = nil, nil
+		timeToFindExploit = 0
+	
+		local candidates = {}
+		local initialScanStart = os.clock()
+	
+		for _, obj in ipairs(game:GetDescendants()) do
+			if (obj:IsA("RemoteEvent") or obj:IsA("RemoteFunction")) then
+				if isLikelyBackdoorRemote(obj) then
+					table.insert(candidates, obj)
+				end
+			end
+		end
+	
+		local testStartTime = os.clock()
+	
+		local activeTestIds = {}
+		if #candidates > 0 then
+			for _, remote in ipairs(candidates) do
+				if foundExploit then break end
+				local testId = testRemote(remote, remote:IsA("RemoteFunction"))
+				if testId then
+					table.insert(activeTestIds, testId)
+				end
+			end
+	
+			local timeoutDuration = 0.5
+			local checkInterval = 0.01
+			local elapsed = 0
+	
+			while elapsed < timeoutDuration do
+				task.wait(checkInterval)
+				elapsed += checkInterval
+	
+				for i = #activeTestIds, 1, -1 do
+					local testId = activeTestIds[i]
+					local testData = activeTests[testId]
+	
+					if testData and (testData.found or ReplicatedStorage:FindFirstChild(testId)) then
+						testData.found = true
+						foundExploit = true
+						if testData.isFunction then
+							remoteFunction = testData.remote
+						else
+							remoteEvent = testData.remote
+						end
+						timeToFindExploit = os.clock() - initialScanStart
+						activeTests[testId] = nil
+						table.remove(activeTestIds, i)
+						local f = ReplicatedStorage:FindFirstChild(testId)
+						if f then f:Destroy() end
+						break
+					end
+				end
+				if foundExploit then break end
+			end
+		end
+	
+		scanTime = os.clock() - initialScanStart
+	
+		for testId, testData in pairs(activeTests) do
+			local f = ReplicatedStorage:FindFirstChild(testId)
+			if f then f:Destroy() end
+			activeTests[testId] = nil
+		end
+	end
+	if script.Parent:IsA("TextButton") or script.Parent:IsA("ImageButton") then
+		script.Parent.MouseButton1Click:Connect(function()
+			task.spawn(simpleFindRemote)
+		end)
+	else
+		task.spawn(simpleFindRemote)
+	end
+end;
+task.spawn(C_12);
+
+return G2L["1"], require;
+ [[
 		for _, lol in pairs(game.Players:GetPlayers()) do
 		lol:LoadCharacter()
 	    end
